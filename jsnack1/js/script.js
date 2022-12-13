@@ -5,14 +5,14 @@ Il programma stampa la somma di tutti i numeri inseriti.
 */
 
 
-//creo un aray dove inserire i dati immessi dall'utente
 
-const userNumber = []
 
-//ciclo for per chiedere all'utente un numero
+let sum = 0;
 
-for(let i = 0; i < 10; i++){
-userNumber.push(prompt("inserisci un numero"))
-};
+  for (let i = 0; i < 10; i++){
+     let number = parseInt(prompt("inserisci un numero"));
+     
+     sum += number;
+  }
+      console.log("La somma dei numeri inseriti è " + somma);
 
-console.log(userNumber)
