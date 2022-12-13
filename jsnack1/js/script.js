@@ -12,7 +12,13 @@ let sum = 0;
   for (let i = 0; i < 10; i++){
      let number = parseInt(prompt("inserisci un numero"));
      
+     if(isNaN(number) || number === ""){
+      alert("devi inserire un numero senza lasciare spazzi vuoti");
+      break
+     }
+
+     
      sum += number;
   }
-      console.log("La somma dei numeri inseriti è " + somma);
+      console.log("La somma dei numeri inseriti è " + sum);
 
